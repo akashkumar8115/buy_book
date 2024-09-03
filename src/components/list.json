@@ -1,0 +1,512 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "category": "free",
+            "title": "Digital Signal Processing",
+            "author": "John G. Proakis",
+            "genre": "ECE",
+            "publishedYear": 2007,
+            "price": "250.00",
+            "image": "https://m.media-amazon.com/images/I/61bgwtKCpHL._AC_UF1000,1000_QL80_.jpg",
+            "url": "https://users.dimi.uniud.it/~antonio.dangelo/MMS/materials/Guide_to_Digital_Signal_Process.pdf"
+        },
+        {
+            "id": 2,
+            "category": "free",
+            "title": "Microelectronic Circuits",
+            "author": "Adel S. Sedra",
+            "genre": "ECE",
+            "price": "290.00",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwoiV10jUaguu674KjP-s7UiqJTXVxlrNjQ&s",
+            "publishedYear": 2014,
+            "url": "https://books-library.net/files/books-library.net-02131527Lf1G9.pdf"
+        },
+        {
+            "id": 3,
+            "category": "free",
+            "title": "Communication Systems",
+            "author": "Simon Haykin",
+            "price": "350.00",
+            "image": "https://campusbookhouse.com/wp-content/uploads/2023/06/9788126533787.jpg",
+            "genre": "ECE",
+            "publishedYear": 2000,
+            "url": "https://www.ee.iitm.ac.in/~giri/pdfs/EE4140/textbook.pdf"
+        },
+        {
+            "id": 4,
+            "category": "free",
+            "title": "Modern Control Engineering",
+            "author": "Katsuhiko Ogata",
+            "genre": "ECE",
+            "publishedYear": 2010,
+            "price": "350.00",
+            "image": "https://www.clankart.com/user-uploads/advert/Modern_Control_Engineering_Book_By_Katsuhiko_Ogata1704716764863.jpg",
+            "url": "https://plcsitemiz.wordpress.com/wp-content/uploads/2009/03/modern-control-engineering-kogata-3rd-edition.pdf"
+        },
+        {
+            "id": 5,
+            "category": "free",
+            "title": "Electric Machinery Fundamentals",
+            "author": "Stephen J. Chapman",
+            "genre": "ECE",
+            "price": "250.00",
+            "image": "https://inwfile.com/s-fi/t4bjs9.jpg",
+            "publishedYear": 2011,
+            "url": "https://elcom-hu.com/Subjects/Electrical/3rd-year/machine%201/machine-book-(5th-ed)-compressed.pdf"
+        },
+        {
+            "id": 6,
+            "category": "free",
+            "title": "Electromagnetic Waves and Radiating Systems",
+            "author": "Edward C. Jordan",
+            "genre": "ECE",
+            "price": "250.00",
+            "image": "https://getmybooks.sgp1.cdn.digitaloceanspaces.com/images/33594231_1.jpg",
+            "publishedYear": 1995,
+            "url": "https://www.pce-fet.com/common/library/books/21/4400_[Edward_Conrad_Jordan]_Electromagnetic_Waves_and_R(b-ok.org).pdf"
+        },
+        {
+            "id": 7,
+            "category": "paid",
+            "title": "RF Circuit Design",
+            "author": "Christopher Bowick",
+            "genre": "ECE",
+            "price": "250.00",
+            "image": "https://media.wiley.com/product_data/coverImage300/77/04705750/0470575077.jpg",
+            "publishedYear": 2008,
+            "url": "https://example.com/book/rf-circuit-design"
+        },
+        {
+            "id": 8,
+            "category": "paid",
+            "title": "Power System Analysis and Design",
+            "author": "J. Duncan Glover",
+            "genre": "ECE",
+            "price": "259.00",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPmVRoC32aUrEJfCcjkAqtJxZ1kc129jXDg&s",
+            "publishedYear": 2011,
+            "url": "https://example.com/book/power-system-analysis-and-design"
+        },
+        {
+            "id": 9,
+            "category": "paid",
+            "title": "Principles of Communication Systems",
+            "author": "Herbert Taub",
+            "genre": "ECE",
+            "price": "252.00",
+            "publishedYear": 2007,
+            "url": "https://example.com/book/principles-of-communication-systems"
+        },
+        {
+            "id": 10,
+            "category": "paid",
+            "title": "Analog Integrated Circuit Design",
+            "author": "Tony Chan Carusone",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "350.00",
+            "url": "https://example.com/book/analog-integrated-circuit-design"
+        },
+        {
+            "id": 11,
+            "category": "paid",
+            "title": "Embedded Systems: Architecture, Programming, and Design",
+            "author": "Raj Kamal",
+            "genre": "ECE",
+            "publishedYear": 2008,
+            "price": "250.00",
+            "url": "https://example.com/book/embedded-systems"
+        },
+        {
+            "id": 12,
+            "category": "paid",
+            "title": "Digital Logic and Computer Design",
+            "author": "M. Morris Mano",
+            "genre": "ECE",
+            "publishedYear": 2004,
+            "price": "250.00",
+            "url": "https://example.com/book/digital-logic-and-computer-design"
+        },
+        {
+            "id": 13,
+            "category": "paid",
+            "title": "Signals and Systems",
+            "author": "Alan V. Oppenheim",
+            "genre": "ECE",
+            "publishedYear": 1996,
+            "price": "250.00",
+            "url": "https://example.com/book/signals-and-systems"
+        },
+        {
+            "id": 14,
+            "category": "paid",
+            "title": "Microprocessor Architecture, Programming, and Applications",
+            "author": "Ramesh S. Gaonkar",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/microprocessor-architecture"
+        },
+        {
+            "id": 15,
+            "category": "paid",
+            "title": "Electric Circuits",
+            "author": "James W. Nilsson",
+            "genre": "ECE",
+            "publishedYear": 2009,
+            "price": "250.00",
+            "url": "https://example.com/book/electric-circuits"
+        },
+        {
+            "id": 16,
+            "category": "paid",
+            "title": "Power Electronics: Converters, Applications, and Design",
+            "author": "Ned Mohan",
+            "genre": "ECE",
+            "publishedYear": 2002,
+            "price": "250.00",
+            "url": "https://example.com/book/power-electronics"
+        },
+        {
+            "id": 17,
+            "category": "paid",
+            "title": "VLSI Design",
+            "author": "Douglas A. Pucknell",
+            "genre": "ECE",
+            "publishedYear": 1994,
+            "price": "250.00",
+            "url": "https://example.com/book/vlsi-design"
+        },
+        {
+            "id": 18,
+            "category": "paid",
+            "title": "Engineering Electromagnetics",
+            "author": "William H. Hayt",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/engineering-electromagnetics"
+        },
+        {
+            "id": 19,
+            "category": "paid",
+            "title": "Computer Networks",
+            "author": "Andrew S. Tanenbaum",
+            "genre": "ECE",
+            "publishedYear": 2010,
+            "price": "250.00",
+            "url": "https://example.com/book/computer-networks"
+        },
+        {
+            "id": 20,
+            "category": "paid",
+            "title": "Control Systems Engineering",
+            "author": "Norman S. Nise",
+            "genre": "ECE",
+            "publishedYear": 2011,
+            "price": "250.00",
+            "url": "https://example.com/book/control-systems-engineering"
+        },
+        {
+            "id": 21,
+            "category": "paid",
+            "title": "Electric Power Systems",
+            "author": "B.M. Weedy",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/electric-power-systems"
+        },
+        {
+            "id": 22,
+            "category": "paid",
+            "title": "Wireless Communications: Principles and Practice",
+            "author": "Theodore S. Rappaport",
+            "genre": "ECE",
+            "publishedYear": 2001,
+            "price": "250.00",
+            "url": "https://example.com/book/wireless-communications"
+        },
+        {
+            "id": 23,
+            "category": "paid",
+            "title": "Computer Organization and Design",
+            "author": "David A. Patterson",
+            "genre": "ECE",
+            "publishedYear": 2011,
+            "price": "280.00",
+            "url": "https://example.com/book/computer-organization-and-design"
+        },
+        {
+            "id": 24,
+            "category": "paid",
+            "title": "Data Communication and Networking",
+            "author": "Behrouz A. Forouzan",
+            "genre": "ECE",
+            "publishedYear": 2007,
+            "price": "250.00",
+            "url": "https://example.com/book/data-communication-and-networking"
+        },
+        {
+            "id": 25,
+            "category": "paid",
+            "title": "Analog and Digital Communications",
+            "author": "Sanjay Sharma",
+            "genre": "ECE",
+            "publishedYear": 2013,
+            "price": "250.00",
+            "url": "https://example.com/book/analog-and-digital-communications"
+        },
+        {
+            "id": 26,
+            "category": "paid",
+            "title": "Electronics: Fundamentals and Applications",
+            "author": "D. Chattopadhyay",
+            "genre": "ECE",
+            "publishedYear": 2010,
+            "price": "350.00",
+            "url": "https://example.com/book/electronics-fundamentals-and-applications"
+        },
+        {
+            "id": 27,
+            "category": "paid",
+            "title": "Optical Fiber Communications",
+            "author": "Gerd Keiser",
+            "genre": "ECE",
+            "publishedYear": 2008,
+            "price": "250.00",
+            "url": "https://example.com/book/optical-fiber-communications"
+        },
+        {
+            "id": 28,
+            "category": "paid",
+            "title": "Semiconductor Device Fundamentals",
+            "author": "Robert F. Pierret",
+            "genre": "ECE",
+            "publishedYear": 1996,
+            "price": "250.00",
+            "url": "https://example.com/book/semiconductor-device-fundamentals"
+        },
+        {
+            "id": 29,
+            "category": "paid",
+            "title": "Wireless Communications and Networking",
+            "author": "William Stallings",
+            "genre": "ECE",
+            "publishedYear": 2003,
+            "price": "250.00",
+            "url": "https://example.com/book/wireless-communications-and-networking"
+        },
+        {
+            "id": 30,
+            "category": "paid",
+            "title": "Network Analysis",
+            "author": "M.E. Van Valkenburg",
+            "genre": "ECE",
+            "publishedYear": 2014,
+            "price": "250.00",
+            "url": "https://example.com/book/network-analysis"
+        },
+        {
+            "id": 31,
+            "category": "paid",
+            "title": "Radar Systems and Radio Aids to Navigation",
+            "author": "A.K. Sen",
+            "genre": "ECE",
+            "publishedYear": 2008,
+            "price": "250.00",
+            "url": "https://example.com/book/radar-systems"
+        },
+        {
+            "id": 32,
+            "category": "paid",
+            "title": "Digital Image Processing",
+            "author": "Rafael C. Gonzalez",
+            "genre": "ECE",
+            "publishedYear": 2008,
+            "price": "250.00",
+            "url": "https://example.com/book/digital-image-processing"
+        },
+        {
+            "id": 33,
+            "category": "paid",
+            "price": "250.00",
+            "title": "Microcontrollers: Principles and Applications",
+            "author": "Palaniappan Karthikeyan",
+            "genre": "ECE",
+            "publishedYear": 2014,
+            "url": "https://example.com/book/microcontrollers-principles-and-applications"
+        },
+        {
+            "id": 34,
+            "category": "paid",
+            "title": "Electrical Machines",
+            "author": "J.B. Gupta",
+            "genre": "ECE",
+            "publishedYear": 2013,
+            "price": "250.00",
+            "url": "https://example.com/book/electrical-machines"
+        },
+        {
+            "id": 35,
+            "category": "paid",
+            "title": "Antennas and Wave Propagation",
+            "author": "John D. Kraus",
+            "genre": "ECE",
+            "publishedYear": 2002,
+            "price": "250.00",
+            "url": "https://example.com/book/antennas-and-wave-propagation"
+        },
+        {
+            "id": 36,
+            "category": "paid",
+            "title": "Microwave Engineering",
+            "author": "David M. Pozar",
+            "genre": "ECE",
+            "publishedYear": 2004,
+            "price": "250.00",
+            "url": "https://example.com/book/microwave-engineering"
+        },
+        {
+            "id": 37,
+            "category": "paid",
+            "title": "Network Security Essentials",
+            "author": "William Stallings",
+            "genre": "ECE",
+            "publishedYear": 2007,
+            "price": "250.00",
+            "url": "https://example.com/book/network-security-essentials"
+        },
+        {
+            "id": 38,
+            "category": "paid",
+            "title": "Control Systems: Principles and Design",
+            "author": "M. Gopal",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/control-systems-principles-and-design"
+        },
+        {
+            "id": 39,
+            "category": "paid",
+            "title": "Solid State Electronic Devices",
+            "author": "Ben G. Streetman",
+            "genre": "ECE",
+            "publishedYear": 2005,
+            "price": "250.00",
+            "url": "https://example.com/book/solid-state-electronic-devices"
+        },
+        {
+            "id": 40,
+            "category": "paid",
+            "title": "Principles of Semiconductor Devices",
+            "author": "Sima Dimitrijev",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/principles-of-semiconductor-devices"
+        },
+        {
+            "id": 41,
+            "category": "paid",
+            "title": "Pulse and Digital Circuits",
+            "author": "A. Anand Kumar",
+            "genre": "ECE",
+            "price": "250.00",
+            "publishedYear": 2014,
+            "url": "https://example.com/book/pulse-and-digital-circuits"
+        },
+        {
+            "id": 42,
+            "category": "paid",
+            "title": "Data Structures and Algorithms in C++",
+            "author": "Adam Drozdek",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/data-structures-and-algorithms-in-c++"
+        },
+        {
+            "id": 43,
+            "category": "paid",
+            "title": "High-Frequency Circuit Design",
+            "author": "Brian Hart",
+            "genre": "ECE",
+            "publishedYear": 2007,
+            "price": "250.00",
+            "url": "https://example.com/book/high-frequency-circuit-design"
+        },
+        {
+            "id": 44,
+            "category": "paid",
+            "title": "Optoelectronics and Photonics: Principles and Practices",
+            "author": "Safa O. Kasap",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/optoelectronics-and-photonics"
+        },
+        {
+            "id": 45,
+            "category": "paid",
+            "title": "Digital Communications",
+            "author": "John G. Proakis",
+            "genre": "ECE",
+            "price": "250.00",
+            "publishedYear": 2007,
+            "url": "https://example.com/book/digital-communications"
+        },
+        {
+            "id": 46,
+            "category": "paid",
+            "title": "Wireless and Cellular Communications",
+            "author": "William C. Y. Lee",
+            "genre": "ECE",
+            "publishedYear": 2005,
+            "price": "250.00",
+            "url": "https://example.com/book/wireless-and-cellular-communications"
+        },
+        {
+            "id": 47,
+            "category": "paid",
+            "title": "Electronic Devices and Circuit Theory",
+            "author": "Robert L. Boylestad",
+            "genre": "ECE",
+            "publishedYear": 2012,
+            "price": "250.00",
+            "url": "https://example.com/book/electronic-devices-and-circuit-theory"
+        },
+        {
+            "id": 48,
+            "category": "paid",
+            "title": "Introduction to Embedded Systems",
+            "author": "Shibu K.V.",
+            "genre": "ECE",
+            "price": "250.00",
+            "publishedYear": 2009,
+            "url": "https://example.com/book/introduction-to-embedded-systems"
+        },
+        {
+            "id": 49,
+            "category": "paid",
+            "title": "Wireless Communication Systems",
+            "author": "Ke-Lin Du",
+            "genre": "ECE",
+            "price": "250.00",
+            "publishedYear": 2010,
+            "url": "https://example.com/book/wireless-communication-systems"
+        },
+        {
+            "id": 50,
+            "category": "paid",
+            "title": "Principles of Electric Machines and Power Electronics",
+            "author": "P.C. Sen",
+            "genre": "ECE",
+            "publishedYear": 2007,
+            "price": "250.00",
+            "url": "https://example.com/book/principles-of-electric-machines"
+        }
+    ]
+}

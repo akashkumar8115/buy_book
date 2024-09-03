@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center; */
+    /* display: flex; */
+    /* height: 100vh; */
+  }
+  
+  .contact-container {
+    /* max-width: 900px; */
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-container:hover {
+    transform: scale(1);
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Search Styles */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 70%;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Book Results Styles */
+  .book-results {
+    text-align: center;
+  }
+  
+  .book-results h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .book-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-results li {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    .contact-info h2 {
+      font-size: 24px;
+    }
+  
+    .search-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-container input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search-container button {
+      width: 100%;
+    }
+  }
+  
+  .book-card-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

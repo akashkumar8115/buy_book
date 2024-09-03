@@ -1,0 +1,33 @@
+.footer_div{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    width: 100vw;
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+    background-color: #f0f0f0; /* background color of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #121212; /* background color of the scrollbar thumb */
+    border-radius: 15px; /* border radius of the scrollbar thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; /* background color of the scrollbar thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff; /* background color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #f0f0f0; /* background color of the scrollbar corner */
+  }

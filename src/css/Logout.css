@@ -1,0 +1,17 @@
+#logout_div{
+    display: block;
+}
+#logout{
+    display: none;
+}
+#authName{
+    display: block;
+}
+
+#authName:hover ~+ #logout {
+display: block;
+}
+
+#authName:hover{
+display: none;
+}

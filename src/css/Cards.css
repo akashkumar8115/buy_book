@@ -1,0 +1,20 @@
+.book_card_div {
+  aspect-ratio: 1;
+}
+.book_card_div:hover {
+z-index: 3;
+
+}
+.book_card figure {
+  aspect-ratio: 1.2;
+}
+.book_card figure img {
+  aspect-ratio: 0.9;
+}
+.book_card_div {
+  /* word-break: break-all; */
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+
+}
