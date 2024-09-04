@@ -46,7 +46,7 @@ function ContactPage() {
           placeholder="Search for books..."
           value={searchTerm}
           onChange={handleInputChange}
-        />
+        /> <br />
         <button onClick={handleSearch}>Search</button>
       </div>
 

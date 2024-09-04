@@ -1,13 +1,6 @@
 /* General Styles */
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center; */
-  /* display: flex; */
-  /* height: 100vh; */
 }
 
 .contact-container {
@@ -122,12 +115,13 @@ h1 {
   }
 
   .search-container input {
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .search-container button {
-    width: 100%;
+    width: 80%;
   }
   .book-card-container {
     display: block;
