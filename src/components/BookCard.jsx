@@ -40,6 +40,7 @@ const BookCard = ({ book }) => {
     link.click();
   };
 
+  
   return (
     <div className="book-card">
       <div className="book-card-inner">

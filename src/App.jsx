@@ -13,17 +13,13 @@ import About from "./components/About.jsx";
 
 function App() {
   const { authUser } = useAuth(); // Destructure the value from useAuth
-
+  console.log(authUser);
   return (
     <>
       <div className="dark:bg-slate-900 dark:text-white">
         <Routes>
           {/* <Navbar /> */}
           <Route path="/" element={<Home />} />
-          {/* <Route
-            path="/course"
-            element={authUser ? <Courses /> : <Navigate to="/signup" />}
-          /> */}
           <Route path="/course" element={<Courses />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/signup" element={<Signup />} />

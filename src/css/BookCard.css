@@ -111,8 +111,24 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .book-card {
-    width: 100%;
-    /* height: auto; */
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  @keyframes scrollbar {
+    0% {
+      opacity: 0.2;
+      scale: 0.6;
+    }
+    40% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  /* Mobile styles */
+  .book-card {
+    animation: scrollbar linear;
+    animation-range: entry 0 cover;
+    animation-timeline: view();
   }
 }
 
@@ -139,7 +155,6 @@
   text-align: center;
   margin: 0.2rem;
 }
-
 
 .confirm-btn {
   background-color: #28a745;

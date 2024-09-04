@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { useAuth } from '../context/AuthProvider';
+import { useAuth } from "../context/AuthProvider";
 function Login() {
   const { login } = useAuth();
   const {
@@ -38,8 +38,8 @@ function Login() {
         }
       });
 
-      const user = { userInfo, token: 'dummy-token' }; // Example user object
-      login(user);
+    const user = { userInfo, token: "dummy-token" }; // Example user object
+    login(user);
   };
   return (
     <div>
@@ -101,6 +101,7 @@ function Login() {
                 <Link
                   to="/signup"
                   className="underline text-blue-500 cursor-pointer"
+                  onClick={() => document.getElementById("my_modal_3").close()}
                 >
                   Signup
                 </Link>{" "}

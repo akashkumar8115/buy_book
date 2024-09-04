@@ -20,7 +20,7 @@ import { useNavigate } from "react-router-dom";
 export const AuthContext = createContext();
 
 export default function AuthProvider({ children }) {
-  const [authUser, setAuthUser] = useState(null);
+  const [authUser, setAuthUser] = useState("user");
   const navigate = useNavigate();
 
   useEffect(() => {

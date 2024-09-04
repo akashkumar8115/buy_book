@@ -29,7 +29,7 @@ function Logout() {
       <button id="authName" onClick={handleLogout} title="Log Out"
         className="px-3 py-2 bg-red-500 text-white rounded-md cursor-pointer"
       >
-        {authUser.fullname}
+        {authUser.fullname ||"User"}
       </button>
         {/* <button id="logout" onClick={handleLogout}  className="px-3 py-2 bg-red-500 text-white rounded-md cursor-pointer">
           logOut
