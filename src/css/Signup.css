@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+}
+.modal-box {
+  margin: auto;
+  width: 100% !important;
+}
+.modal-box:hover {
+  transition: 0.4s ease-in-out;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.5);
+  scale: 1.1;
+}
+@media screen and (max-width: 768px) {
+  .modal-box:hover {
+    scale: 0.9;
+  }
+}

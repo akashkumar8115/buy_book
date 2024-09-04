@@ -4,7 +4,7 @@ import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-
+import "../css/Signup.css";
 function Signup() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ function Signup() {
   return (
     <>
       <div className="flex h-screen items-center justify-center">
-        <div className="w-[600px]">
+        <div className="">
           <div className="modal-box">
             <form onSubmit={handleSubmit(onSubmit)}>
               <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
