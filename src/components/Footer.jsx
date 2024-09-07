@@ -49,7 +49,8 @@ function Footer() {
           </div>
         </nav>
         <aside>
-          <p>Copyright © 2024 - All right reserved by Akash kumar</p>
+          <p>Copyright © 2024 - All right reserved by Akash Kumar</p>
+          <p style={{color:"transparent"}}>Created by Akash Kumar <a href="https://www.linkedin.com/in/akash-kumar-54073a209/" target="_blank" rel="noopener noreferrer"></a></p>
         </aside>
       </footer>
     </div>
