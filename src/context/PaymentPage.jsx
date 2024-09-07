@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for v6
-
+import { useNavigate } from "react-router-dom";
 import "../css/PaymentPage.css";
 import jsPDF from "jspdf";
+
 const PaymentPage = () => {
   const navigate = useNavigate();
 
+  
   const [formData, setFormData] = useState({
     cardNumber: "",
     cardHolder: "",
@@ -13,19 +14,69 @@ const PaymentPage = () => {
     cvv: "",
   });
 
+  const [errors, setErrors] = useState({
+    cardNumber: "",
+    cardHolder: "",
+    expiryDate: "",
+    cvv: "",
+  });
+
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    let newErrors = { ...errors };
+
+    // Validate card number (15 digits)
+    if (name === "cardNumber") {
+      if (/^\d{0,16}$/.test(value)) {
+        newErrors.cardNumber = "";
+      } else {
+        newErrors.cardNumber = "Card number must be 16 digits";
+      }
+    }
+
+    // Validate card holder name (alphabets only)
+    if (name === "cardHolder") {
+      if (/^[a-zA-Z\s]*$/.test(value)) {
+        newErrors.cardHolder = "";
+      } else {
+        newErrors.cardHolder = "Name must contain only letters";
+      }
+    }
+
+    // Validate expiry date (MM/YY format)
+    if (name === "expiryDate") {
+      if (/^(0[1-9]|1[0-2])\/\d{2}$/.test(value)) {
+        newErrors.expiryDate = "";
+      } else {
+        newErrors.expiryDate = "Invalid expiry date (MM/YY)";
+      }
+    }
+
+    // Validate CVV (3 or 4 digits)
+    if (name === "cvv") {
+      if (/^\d{3,4}$/.test(value)) {
+        newErrors.cvv = "";
+      } else {
+        newErrors.cvv = "CVV must be 3 or 4 digits";
+      }
+    }
+
+    // Set the updated errors
+    setErrors(newErrors);
+
+    // Update form data if valid
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
-console.log(formData.cvv)
-    if (formData.cvv.length > 1 &&formData.cardNumber.length > 1 ) {
+
+    if (formData.cardNumber.length > 10 && newErrors.cvv == "") {
       const a = document.getElementById("paynow");
       a.disabled = false;
       document.getElementById("paynow").style.opacity = "1";
       document.getElementById("paynow").style.cursor = "pointer";
-    }
-    else{
+    } else {
       const a = document.getElementById("paynow");
       a.disabled = true;
       document.getElementById("paynow").style.opacity = "0.7";
@@ -35,27 +86,36 @@ console.log(formData.cvv)
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement payment submission logic here
-    console.log("Payment data submitted", formData);
-    handlePayment();
+    if (isFormValid()) {
+      handlePayment();
+    }
   };
 
   const handlePayment = () => {
     downloadSlip();
   };
+
   const downloadSlip = () => {
-    if (formData) {
-      const doc = new jsPDF();
-      doc.text("Payment Slip", 20, 20);
-      doc.text(`Couster Name: ${formData.cardHolder}`, 20, 30);
-      doc.text(`Address: ${formData.cardNumber}`, 20, 40);
-      doc.text("Thank you for your purchase!", 20, 50);
-      doc.save("payment_slip.pdf");
-    }
-    if (formData.cvv.length > 1 &&formData.cardNumber.length > 1 ) {
-      alert("Are you want go to Home page & also download Payment slip");
-      navigate("/");
-    }
+    const doc = new jsPDF();
+    doc.text("Payment Slip", 20, 20);
+    doc.text(`Customer Name: ${formData.cardHolder}`, 20, 30);
+    doc.text(`Card Number: ${formData.cardNumber}`, 20, 40);
+    doc.text("Thank you for your purchase!", 20, 50);
+    doc.save("payment_slip.pdf");
+
+    alert("Payment slip downloaded. Redirecting to homepage.");
+    navigate("/");
+  };
+
+  const isFormValid = () => {
+    return (
+      formData.cardNumber.length === 15 &&
+      formData.cardHolder &&
+      formData.expiryDate &&
+      formData.cvv.length >= 3 &&
+      formData.cvv.length <= 4 &&
+      !Object.values(errors).some((error) => error)
+    );
   };
 
   return (
@@ -72,7 +132,11 @@ console.log(formData.cvv)
             onChange={handleChange}
             required
           />
+          {errors.cardNumber && (
+            <small className="error">{errors.cardNumber}</small>
+          )}
         </div>
+
         <div className="form-group">
           <label htmlFor="cardHolder">Card Holder Name</label>
           <input
@@ -83,10 +147,14 @@ console.log(formData.cvv)
             onChange={handleChange}
             required
           />
+          {errors.cardHolder && (
+            <small className="error">{errors.cardHolder}</small>
+          )}
         </div>
+
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="expiryDate">Expiry Date</label>
+            <label htmlFor="expiryDate">Expiry Date (MM/YY)</label>
             <input
               type="text"
               name="expiryDate"
@@ -96,7 +164,11 @@ console.log(formData.cvv)
               onChange={handleChange}
               required
             />
+            {errors.expiryDate && (
+              <small className="error">{errors.expiryDate}</small>
+            )}
           </div>
+
           <div className="form-group">
             <label htmlFor="cvv">CVV</label>
             <input
@@ -107,14 +179,15 @@ console.log(formData.cvv)
               onChange={handleChange}
               required
             />
+            {errors.cvv && <small className="error">{errors.cvv}</small>}
           </div>
         </div>
+
         <button
           type="submit"
           id="paynow"
-          disabled
-          className="payment-btn"
-          onClick={handlePayment}
+          disabled={!isFormValid()}
+          className={`payment-btn ${isFormValid() ? "" : "disabled"}`}
         >
           Pay Now
         </button>
