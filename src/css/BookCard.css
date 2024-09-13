@@ -138,7 +138,6 @@
     animation: scrollbar linear;
     animation-range: entry 0 cover;
     animation-timeline: view();
-    
   }
 }
 

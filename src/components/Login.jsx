@@ -18,7 +18,12 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post("/user/login", userInfo)
+      .post("https://m654c2-4001.csb.app/user/login", userInfo, {
+        withCredentials: true,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
       .then((res) => {
         console.log(res.data);
         if (res.data) {
@@ -34,7 +39,7 @@ function Login() {
         if (err.response) {
           console.log(err);
           toast.error("Error: " + err.response.data.message);
-          setTimeout(() => {}, 2000);
+          setTimeout(() => { }, 2000);
         }
       });
 

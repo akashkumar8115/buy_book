@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/user': {
-        target: 'https://lm3dz7-4001.csb.app/',
+        target: 'https://m654c2-4001.csb.app/',
         changeOrigin: true,
         // rewrite: (path) => path.replace(/^\/user/, '')
       }
