@@ -9,7 +9,7 @@ function Signup() {
   const location = useLocation();
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
-  
+
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = async (data) => {
@@ -20,7 +20,12 @@ function Signup() {
     };
 
     try {
-      const res = await axios.post("https://m654c2-4001.csb.app/user/signup", userInfo);
+      const res = await axios.post("https://m654c2-4001.csb.app/user/signup", userInfo, {
+        withCredentials: true,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       console.log(res.data);
       if (res.data) {
         toast.success("Signup Successfully");
@@ -46,7 +51,7 @@ function Signup() {
               </Link>
 
               <h3 className="font-bold text-lg">Signup</h3>
-              
+
               {/* Fullname Input */}
               <div className="mt-4 space-y-2">
                 <span>Name</span>
@@ -111,7 +116,7 @@ function Signup() {
                 </button>
                 <p className="text-xl">
                   Have an account?{" "}
-                  <Link  className="underline text-blue-500"  onClick={() =>
+                  <Link className="underline text-blue-500" onClick={() =>
                     document.getElementById("my_modal_3").showModal()
                   }>
                     Login
