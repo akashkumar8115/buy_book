@@ -4,7 +4,7 @@ import Login from "./Login";
 import Logout from "./Logout";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for v6
 import { useAuth } from "../context/AuthProvider";
-
+import "../css/Navbar.css"
 function Navbar() {
   const { authUser } = useAuth();
   console.log(authUser);
@@ -148,7 +148,7 @@ function Navbar() {
             </svg>
           </label>
           {authUser ? (
-            <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">
+            <a className="bg-black text-white rounded-md hover:bg-slate-800 duration-300 cursor-pointer">
               <Logout />
             </a>
           ) : (
