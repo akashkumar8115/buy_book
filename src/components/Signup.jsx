@@ -20,7 +20,7 @@ function Signup() {
     };
 
     try {
-      const res = await axios.post("https://m654c2-4001.csb.app/user/signup", userInfo, {
+      const res = await axios.post("https://buy-book-backend.onrender.com/user/signup", userInfo, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
