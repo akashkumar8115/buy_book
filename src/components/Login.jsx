@@ -46,6 +46,7 @@ function Login() {
     const user = { userInfo, token: "dummy-token" }; // Example user object
     login(user);
   };
+  
   return (
     <div>
       <dialog id="my_modal_3" className="modal">

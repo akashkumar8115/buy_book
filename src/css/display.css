@@ -8,14 +8,14 @@ body {
   background: #ffffff;
   padding: 40px 50px;
   border-radius: 12px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 20px rgba(186, 186, 186, 0.1);
   transform: scale(0.98);
   transition: all 0.3s ease-in-out;
 }
 
 .contact-container:hover {
   transform: scale(1);
-  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 25px 35px rgba(186, 186, 186, 0.15);
 }
 
 h1 {
